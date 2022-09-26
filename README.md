@@ -1,14 +1,9 @@
-# RookieDB
+# Single-machine Database Management System(DBMS)
 
-![The official unofficial mascot of the class projects](images/derpydb-small.jpg)
 
 ## Overview
-
-This repo contains my implementation for CS186 RookieDB projects. There is a [gitbook](https://cs186.gitbook.io/project/) for CS186 projects, but it may be updated each semester, so I cloned the 2021 spring version. You can find the projects handout that I used [here](./project-handout).
-
 The master branch contains a bare-bones database implementation, which supports
-executing simple transactions in series. This is the skeleton code you will use throughout the projects. In the assignments of
-this class, you will be adding support for
+executing simple transactions in series. Adding support for
 B+ tree indices, efficient join algorithms, query optimization, multigranularity
 locking to support concurrent execution of transactions, and database recovery.
 
@@ -16,15 +11,13 @@ locking to support concurrent execution of transactions, and database recovery.
 
 My implementation for each project is in the corresponding branch as follows (you can use `git branch -a` to see them), you can `git checkout branch_name` to see my implementation for each project.
 
-| **Assignment**                                                                                | **Branch name** |
+| **Code**                                                                                | **Branch name** |
 |-----------------------------------------------------------------------------------------------|---------------------|
 | Skeleton code                                                | Master          |
-| [Project 2: B+ Trees](https://cs186.gitbook.io/project/assignments/proj2)                     | b_plus_tree |
-| [Project 3: Joins and Query Optimization](https://cs186.gitbook.io/project/assignments/proj3) | join_query_opt |
-| [Project 4: Concurrency](https://cs186.gitbook.io/project/assignments/proj4)                  | concurrency |
-| [Project 5: Recovery](https://cs186.gitbook.io/project/assignments/proj5)                     | recovery |
-
-To start your Rookiedb projects journey, first clone the skeleton code (i.e. master branch) , then follow the instruction below to set up your local development environment. When you  start one specific project, you can create a new branch from master then implement it to keep your code tree clean. 
+| [B+ Trees](https://cs186.gitbook.io/project/assignments/proj2)                     | b_plus_tree |
+| [Joins and Query Optimization](https://cs186.gitbook.io/project/assignments/proj3) | join_query_opt |
+| [Concurrency](https://cs186.gitbook.io/project/assignments/proj4)                  | concurrency |
+| [Recovery](https://cs186.gitbook.io/project/assignments/proj5)                     | recovery |
 
 ## Setting up your local development environment
 
@@ -57,7 +50,7 @@ follow the instructions in the following document:
 
 ## The code
 
-As you will be working with this codebase for the rest of the semester, it is a good idea to get familiar with it. The code is located in the `src/main/java/edu/berkeley/cs186/database` directory, while the tests are located in the `src/test/java/edu/berkeley/cs186/database directory`. The following is a brief overview of each of the major sections of the codebase.
+The code is located in the `src/main/java/edu/berkeley/cs186/database` directory, while the tests are located in the `src/test/java/edu/berkeley/cs186/database directory`. The following is a brief overview of each of the major sections of the codebase.
 
 ### cli
 
